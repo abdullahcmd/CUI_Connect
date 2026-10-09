@@ -1,0 +1,60 @@
+:root {
+  /* brand (COMSATS logo) */
+  --cui-blue: #1f5ca9; --cui-blue-deep: #184a8a; --cui-grape: #563073;
+  --cui-sky: #648ec3; --cui-lavender: #bdaec8;
+
+  /* sidebar — same in both themes */
+  --side-rail: #1b1230; --side-bg: #24183a; --side-hover: #33264f;
+  --side-active: #1f5ca9; --side-text: #f3eef7; --side-muted: #bdaec8; --side-rule: #3a2c54;
+  --side-badge-active: #004489;
+
+  /* message area */
+  --bg: #ffffff; --surface: #f7f6fa;
+  --ink: #1a1726; --ink-2: #4d4860; --ink-3: #6e6880;
+  --rule: #e7e4ee; --rule-strong: #d2cddc; --select: #eaf0f9;
+  --primary: #1f5ca9; --official: #563073; --official-wash: #f1ecf5; --danger: #b42318;
+
+  /* Figma-specific tints (lilac action surfaces used in screen designs) */
+  --ink-figma: #1d1929;
+  --lilac-50: #f7f1ff; --lilac-100: #f2ebff; --lilac-200: #ece5fb; --lilac-300: #e6dff5;
+  --tag-neutral: #e7e2ea;
+  --success-wash: rgba(47, 107, 79, 0.1);
+  --danger-wash: rgba(180, 35, 24, 0.1);
+  --danger-wash-soft: rgba(180, 35, 24, 0.05);
+  --closed-wash: rgba(110, 104, 128, 0.1);
+
+  /* status */
+  --st-open: #9a6b12; --st-progress: #1f5ca9; --st-escalated: #b42318;
+  --st-resolved: #2f6b4f; --st-closed: #6e6880;
+
+  /* departments */
+  --dept-cs: #dce3ee; --dept-ee: #e9e1d3; --dept-ms: #dde7df;
+  --dept-office: #e7e2ea; --dept-library: #e4e0d6; --dept-cafe: #eedfd6;
+
+  /* type */
+  --font-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --font-urdu: "Noto Nastaliq Urdu", serif;
+
+  /* space + shape */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-6: 24px; --s-8: 32px; --s-12: 48px;
+  --r-xs: 2px; --r-sm: 4px; --r-md: 6px;
+  --line: 1px solid var(--rule);
+  --focus: 0 0 0 2px var(--bg), 0 0 0 4px var(--cui-blue);
+  --elev-pop: 0 1px 0 var(--rule), 0 12px 32px rgba(36, 24, 58, 0.12);
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #15121c; --surface: #1c1826;
+  --ink: #eeeaf4; --ink-2: #bdb6cc; --ink-3: #8f889f;
+  --rule: #2a2536; --rule-strong: #3a3448; --select: #1e2b44;
+  --primary: #4c86d1; --official: #c9b3da; --official-wash: #2c2238; --danger: #f0695a;
+  --st-open: #d9a74a; --st-progress: #7fa3db; --st-escalated: #f0695a;
+  --st-resolved: #6db592; --st-closed: #8f889f;
+  --dept-cs: #24304a; --dept-ee: #3a3326; --dept-ms: #22352b;
+  --dept-office: #2f2a36; --dept-library: #302d27; --dept-cafe: #3a2b24;
+  --focus: 0 0 0 2px var(--bg), 0 0 0 4px var(--cui-sky);
+  --elev-pop: 0 1px 0 var(--rule), 0 12px 32px rgba(0, 0, 0, 0.45);
+}
